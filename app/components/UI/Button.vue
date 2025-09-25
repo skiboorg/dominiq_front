@@ -23,14 +23,14 @@ const variantClasses: Record<string, string> = {
 }
 
 const sizeClasses: Record<string, string> = {
-  sm: 'py-4 px-8 font-bold',
-  lg: 'py-5 xl:py-7 px-8 xl:px-10 text-[20px] font-semibold',
+  sm: 'py-3 px-6 font-bold text-[16px]',
+  lg: 'py-[18px] xl:py-[22px] px-8 xl:px-10 text-[20px] font-bold',
 }
 
 </script>
 
 <template>
-<button class="font-onest rounded-[124px] flex w-full md:w-auto items-center justify-center gap-3"
+<button class="font-onest  flex w-full md:w-auto items-center justify-center gap-3"
         :class="[variantClasses[props.variant], sizeClasses[props.size]]">
   <slot></slot>
 </button>

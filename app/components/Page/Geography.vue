@@ -12,10 +12,11 @@
     география
   </BlockSmallHeader>
        <div class="grid grid-cols-1 lg:grid-cols-4 gap-5">
-         <img class="w-full h-auto object-cover" src="/pp.png" alt="">
-         <img class="w-full h-auto object-cover" src="/pp.png" alt="">
-         <img class="w-full h-auto object-cover" src="/pp.png" alt="">
-         <img class="w-full h-auto object-cover" src="/pp.png" alt="">
+         <img class="w-full h-auto object-cover" src="/img/g1.jpg" alt="">
+         <img class="w-full h-auto object-cover" src="/img/g2.jpg" alt="">
+         <img class="w-full h-auto object-cover" src="/img/g3.jpg" alt="">
+         <img class="w-full h-auto object-cover" src="/img/g4.jpg" alt="">
+
 
        </div>
 </BlockSection>

@@ -40,7 +40,7 @@ const items = [
     </div>
 
     <TypingText40 extra_class="text-center mb-[60px]" text="15 000₽/ месяц"/>
-    <UIButton class="w-full">Приобрести доступ</UIButton>
+    <UIButton class="!w-full">Приобрести доступ</UIButton>
   </CardBase>
 </template>
 

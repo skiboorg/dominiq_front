@@ -62,9 +62,9 @@ const variantClasses: Record<string, string> = {
           <UIBadge  :label="item?.date_text || item?.date"/>
         </div>
 
-        <TypingText16 v-if="variant==='numbered'" extra_class="font-medium text-gray-400 max-w-[90%] lg:max-w-[70%] break-all  "
+        <TypingText16 extra_class="font-medium text-gray-400 max-w-full   md:break-all "
                       :text="item?.short_description || item?.description"/>
-        <TypingText18 v-else extra_class="font-medium text-gray-400 max-w-full lg:max-w-[70%]  break-all" :text="item?.short_description || item?.description"/>
+
       </div>
       <nuxt-link v-if="with_link" :to="`/events/${item?.slug}`">
         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">

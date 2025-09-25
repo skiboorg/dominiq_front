@@ -25,10 +25,10 @@ const links = [
       :class="isHero
       ? 'absolute top-0 left-0 w-full z-20  text-white'
       : 'relative  text-black mb-[60px]'"
-      class="lg:py-6 xl:py-12 border-b"
+      class="py-6 xl:py-11 border-b"
 
   >
-    <div class="container mx-auto flex items-center justify-between py-4">
+    <div class="container mx-auto flex items-center justify-between ">
       <!-- Лого -->
       <nuxt-link  v-if="route.path !== '/'"  to="/">
         <svg v-if="!isHero" width="232" height="42" viewBox="0 0 232 42" fill="none" xmlns="http://www.w3.org/2000/svg">

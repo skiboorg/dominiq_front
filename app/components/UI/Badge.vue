@@ -15,8 +15,8 @@ const props = defineProps({
 
 const variantClasses = {
   default: 'text-gray-400',
-  primary: 'bg-primary text-white border-transparent',
-  contrast: 'bg-[#F1F1F1] text-primary border-transparent',
+  primary: 'bg-[#432D2E] text-white border-transparent',
+  contrast: 'bg-[#F1F1F1]  border-transparent',
 
 }
 
@@ -29,7 +29,7 @@ const sizeClasses = {
 
 <template>
   <span
-      class="rounded-[64px] border  font-medium inline-flex items-center gap-2"
+      class="rounded-[64px] border  font-normal inline-flex items-center gap-2"
       :class="[variantClasses[variant], sizeClasses[size]]"
   >
     <svg v-if="with_dot" width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
