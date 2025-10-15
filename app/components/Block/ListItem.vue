@@ -55,14 +55,14 @@ const variantClasses: Record<string, string> = {
     <div :class="variant==='numbered' ? 'col-span-8 lg:col-span-8' : 'col-span-6'"
          class="flex flex-col lg:flex-row items-start lg:items-center justify-between  gap-4 lg:gap-0">
       <div class=" flex flex-col items-start ">
-        <TypingText40 v-if="variant==='numbered'" extra_class="font-bold mb-2 break-all" :text="item?.title"/>
-        <TypingText24 v-else extra_class="font-bold mb-3 break-all" :text="item?.title"/>
+        <TypingText40 v-if="variant==='numbered'" extra_class="font-bold mb-2  max-w-full lg:max-w-[70%]" :text="item?.title"/>
+        <TypingText24 v-else extra_class="font-bold mb-3 " :text="item?.title"/>
 
         <div v-if="variant==='numbered'" class="flex flex-wrap gap-3 mb-4 lg:mb-8">
           <UIBadge  :label="item?.date_text || item?.date"/>
         </div>
 
-        <TypingText16 extra_class="font-medium text-gray-400 max-w-full   md:break-all "
+        <TypingText16 extra_class="font-medium text-gray-400 max-w-full lg:max-w-[70%]    "
                       :text="item?.short_description || item?.description"/>
 
       </div>

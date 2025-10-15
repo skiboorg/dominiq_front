@@ -16,7 +16,7 @@ const props = defineProps({
 const variantClasses = {
   default: 'text-gray-400',
   primary: 'bg-[#432D2E] text-white border-transparent',
-  contrast: 'bg-[#F1F1F1]  border-transparent',
+  contrast: 'bg-[#F1F1F1]  border-transparent text-gray-900',
 
 }
 

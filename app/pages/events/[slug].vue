@@ -63,7 +63,7 @@ const {data} = await useAsyncData(()=>$api.blank.event(slug))
 
   </BlockSection>
   <BlockSection extra-class="pt-0 pb-0">
-    <TypingText64
+    <TypingText40
         extra_class="max-w-full lg:max-w-[75%]"
         :text="data.big_text"
     />
@@ -77,6 +77,24 @@ const {data} = await useAsyncData(()=>$api.blank.event(slug))
         </CardBase>
 
     </div>
+  </BlockSection>
+  <BlockSection title="Формат участия" >
+    <template #extra_header>
+      <TypingText24 extra_class="text-gray-400 mb-5" text="1 месяц в подарок при оплате 6 месяцев"/>
+      <TypingText24 extra_class="text-gray-400" text="2 месяца в подарок при оплате 12 месяцев"/>
+
+    </template>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+      <CardFormat v-for="tariff in data.tariffs"
+                  :tariff="tariff"
+                  :variant="tariff.is_dark_red ? 'standart' : 'business'"></CardFormat>
+
+    </div>
+
+
+
+
   </BlockSection>
 </template>
 

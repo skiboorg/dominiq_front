@@ -14,7 +14,6 @@ definePageMeta({
   <PageEvents id="events"/>
   <PageCEO/>
   <PageMedia/>
-<!--  <PageFormat/>-->
   <PageTest id="test"/>
 
 </template>

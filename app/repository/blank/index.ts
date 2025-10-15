@@ -18,6 +18,10 @@ export function createBlankRepository(appFetch: typeof $fetch){
             return appFetch(`/api/data/media-articles/${slug}`);
 
         },
+        homebanner(){
+            return appFetch(`/api/data/homebanner`);
+
+        },
     }
 
 }

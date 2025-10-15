@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import {Carousel, Pagination, Slide} from "vue3-carousel";
+const {$api} = useNuxtApp()
+
+const {data} = await useAsyncData(()=>$api.blank.homebanner())
 const carouselConfig = {
 
   wrapAround: true,
@@ -11,13 +14,7 @@ const carouselConfig = {
 
 }
 const slider = ref()
-const items = [
-  {image:'https://placehold.co/1920x720.png', text:'Мы на мероприятии <br>в 2025 году на Арбате'},
-  {image:'https://placehold.co/1920x720.png', text:'Мы на мероприятии <br>в 2025 году на Арбате'},
-  {image:'https://placehold.co/1920x720.png', text:'Мы на мероприятии <br>в 2025 году на Арбате'},
-  {image:'https://placehold.co/1920x720.png', text:'Мы на мероприятии <br>в 2025 году на Арбате'},
-  {image:'https://placehold.co/1920x720.png', text:'Мы на мероприятии <br>в 2025 году на Арбате'},
-]
+
 </script>
 
 <template>
@@ -33,14 +30,14 @@ const items = [
     </svg>
   </div>
   <Carousel ref="slider" v-bind="carouselConfig" >
-    <Slide v-for="(item,index) in items" :key="index" >
+    <Slide v-for="(item,index) in data" :key="index" >
       <div class="flex flex-col items-start justify-end  h-[720px] w-full py-5 lg:py-10 px-5 lg:px-20 bg-left lg:bg-center"
 
-           :style="`background-image: url(${item.image})`" style="background-size: cover">
+           :style="`background-image: url(${item.photo})`" style="background-size: cover">
 
         <div class="flex flex-col lg:flex-row items-start lg:items-end justify-between w-full">
-          <TypingText40 extra_class="text-white uppercase leading-[120%]"  :text="item.text"/>
-          <div class="text-[26px] lg:text-[48px] text-white tracking-[-0.04rem]">{{index+1}} / {{items.length}}</div>
+          <TypingText40 extra_class="text-white uppercase leading-[120%] lg:max-w-[50%]"  :text="item.description"/>
+          <div class="text-[26px] lg:text-[48px] text-white tracking-[-0.04rem]">0{{index+1}} / {{data.length}}</div>
         </div>
       </div>
     </Slide>
