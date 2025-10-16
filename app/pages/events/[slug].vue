@@ -24,11 +24,14 @@ const {data} = await useAsyncData(()=>$api.blank.event(slug))
         <TypingText96 extra_class="text-white" :text="data.title"/>
       </div>
 
-        <TypingText24 extra_class="text-normal mb-24 font-onest text-white max-w-[70%]"
+        <TypingText24 extra_class="text-normal mb-24 font-onest text-white lg:max-w-[70%]"
                       :text="data.short_description"/>
 
       <div class="flex flex-col lg:flex-row gap-4 w-full lg:w-auto">
-        <UIButton size="lg">Забронировать</UIButton>
+        <a href="#tariff">
+          <UIButton size="lg">Забронировать</UIButton>
+        </a>
+
         <nuxt-link to="/events">
           <UIButton size="lg" variant="link" >Другие мероприятия
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,33 +71,24 @@ const {data} = await useAsyncData(()=>$api.blank.event(slug))
         :text="data.big_text"
     />
   </BlockSection>
-  <BlockSection title="Ведущие программы" >
-    <TypingText18 extra_class="max-w-full lg:max-w-[40%] mb-[60px] text-gray-400"
-                  text="Международное сообщество женщин-лидеров, предпринимательниц и тех, кто хочет выйти на новый уровень влияния, дохода и глубокой реализации."/>
+<!--  title="Ведущие программы"-->
+  <BlockSection  >
+<!--    <TypingText18 extra_class="max-w-full lg:max-w-[40%] mb-[60px] text-gray-400"-->
+<!--                  text="Международное сообщество женщин-лидеров, предпринимательниц и тех, кто хочет выйти на новый уровень влияния, дохода и глубокой реализации."/>-->
     <div class="grid grid-cols-1 lg:grid-cols-2  w-full gap-5">
-        <CardBase variant="filled" v-for="item in data.hosts">
+        <CardBase variant="filled" padding="xs" v-for="item in data.hosts">
           <CardCEO :item="item"/>
         </CardBase>
 
     </div>
   </BlockSection>
-  <BlockSection title="Формат участия" >
-    <template #extra_header>
-      <TypingText24 extra_class="text-gray-400 mb-5" text="1 месяц в подарок при оплате 6 месяцев"/>
-      <TypingText24 extra_class="text-gray-400" text="2 месяца в подарок при оплате 12 месяцев"/>
-
-    </template>
-
+  <BlockSection id="tariff" title="Формат участия" >
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
       <CardFormat v-for="tariff in data.tariffs"
                   :tariff="tariff"
                   :variant="tariff.is_dark_red ? 'standart' : 'business'"></CardFormat>
 
     </div>
-
-
-
-
   </BlockSection>
 </template>
 

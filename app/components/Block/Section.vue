@@ -24,7 +24,7 @@ const props = defineProps({
 <template>
 <section class="pb-20 lg:pb-32 xl:pb-40" :class="[props.extraClass]" :style="`background-color: ${props.bgColor}`">
   <div class="container ">
-    <div v-if="title" class="grid grid-cols-1 lg:grid-cols-2 mb-10 lg:mb-20 gap-10 lg:gap-0">
+    <div v-if="title" class="grid grid-cols-1 lg:grid-cols-2 mb-10 lg:mb-[60px] gap-10 lg:gap-0">
       <div class="flex flex-col items-start justify-between">
         <TypingText64 extra_class="uppercase" :text="title"/>
         <NuxtLink v-if="show_button" to="/">

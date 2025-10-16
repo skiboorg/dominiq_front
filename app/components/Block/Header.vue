@@ -10,12 +10,12 @@ watch(() => route.fullPath, () => {
 
 const links = [
 
-  {label:'Экосистема',to:'#eco'},
+  {label:'Экосистема',to:'/#eco'},
   {label:'Мероприятия',to:'/events'},
-  {label:'Представительства',to:'#geo'},
+  {label:'Представительства',to:'/#geo'},
   {label:'Основатели',to:'/'},
   {label:'Медиа',to:'/media'},
-  {label:'Тестовый период',to:'#test'},
+  {label:'Тестовый период',to:'/#test'},
 
 ]
 </script>
@@ -70,14 +70,15 @@ const links = [
 
       </div>
       <div class="flex lg:hidden justify-end w-full">
-        <UIButton  class="" :is_hero="isHero" outline  @click="mobileMenuActive=true">
-          <template #icon>
+
+        <UIButton  class="!w-auto" :is_hero="isHero" outline  @click="mobileMenuActive=true">
+
             <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 1.5H13" stroke="#727272" stroke-width="2" stroke-linecap="round"/>
               <path d="M1 7.5H13" stroke="#727272" stroke-width="2" stroke-linecap="round"/>
             </svg>
-          </template>
-          Меню
+
+
         </UIButton>
       </div>
 

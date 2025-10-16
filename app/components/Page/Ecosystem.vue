@@ -21,19 +21,19 @@ const items = [
     <div class="col-span-12 lg:col-span-6 lg:pl-20">
       <div class="grid grid-cols-2">
         <div class="">
-          <p class="text-[36px] lg:text-[72px] font-medium">$168M</p>
+          <p class="text-[36px] lg:text-[72px] ">$168M</p>
           <TypingText16 text="Совокупная выручка<br>резидентов" extra_class="font-regular text-gray-400 mb-[30px] lg:mb-[60px] ]" />
         </div>
         <div class="">
-          <p class="text-[36px] lg:text-[72px] font-medium">13</p>
+          <p class="text-[36px] lg:text-[72px] ">13</p>
           <TypingText16 text="Представительств в ключевых<br>странах и городах мира" extra_class="font-regular text-gray-400  mb-[30px] lg:mb-[60px]" />
         </div>
         <div class=" ">
-          <p class="text-[36px] lg:text-[72px] font-medium">100+</p>
+          <p class="text-[36px] lg:text-[72px] ">100+</p>
           <TypingText16 text="Резидентов<br>и экспертов в сети" extra_class="font-regular text-gray-400  lg:mb-[60px]" />
         </div>
         <div class="">
-          <p class="text-[36px] lg:text-[72px] font-medium">100+</p>
+          <p class="text-[36px] lg:text-[72px] ">100+</p>
           <TypingText16 text="Стратегических<br>партнеров" extra_class="font-regular text-gray-400  lg:mb-[60px]" />
         </div>
       </div>

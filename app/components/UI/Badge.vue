@@ -15,13 +15,13 @@ const props = defineProps({
 
 const variantClasses = {
   default: 'text-gray-400',
-  primary: 'bg-[#432D2E] text-white border-transparent',
+  primary: 'bg-[#7B0000] text-white border-transparent',
   contrast: 'bg-[#F1F1F1]  border-transparent text-gray-900',
 
 }
 
 const sizeClasses = {
-  xs: 'text-xs px-[18px] py-[14px]',
+  xs: 'text-xs lg:text-sm px-[9px] py-[7px] lg:px-[24px] lg:py-[12px]',
   sm: 'text-sm px-3 py-1.5',
   md: 'text-[24px] leading-[100%] px-5 py-3'
 }

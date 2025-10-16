@@ -31,13 +31,13 @@ const slider = ref()
   </div>
   <Carousel ref="slider" v-bind="carouselConfig" >
     <Slide v-for="(item,index) in data" :key="index" >
-      <div class="flex flex-col items-start justify-end  h-[720px] w-full py-5 lg:py-10 px-5 lg:px-20 bg-left lg:bg-center"
+      <div class="flex flex-col items-start justify-end h-[360px] lg:h-[720px] w-full py-5 lg:py-10 px-5 lg:px-20 bg-center lg:bg-center"
 
            :style="`background-image: url(${item.photo})`" style="background-size: cover">
 
         <div class="flex flex-col lg:flex-row items-start lg:items-end justify-between w-full">
           <TypingText40 extra_class="text-white uppercase leading-[120%] lg:max-w-[50%]"  :text="item.description"/>
-          <div class="text-[26px] lg:text-[48px] text-white tracking-[-0.04rem]">0{{index+1}} / {{data.length}}</div>
+          <div class="text-[14px] lg:text-[48px] text-white tracking-[-0.04rem]">0{{index+1}} / 0{{data.length}}</div>
         </div>
       </div>
     </Slide>

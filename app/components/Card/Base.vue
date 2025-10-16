@@ -5,7 +5,7 @@ const props = defineProps({
     default: 'default'
   },
   padding: {
-    type: String as () => 'sm' | 'lg',
+    type: String as () => 'xs' |'sm' | 'lg',
     default: 'sm'
   },
   extraClass: {
@@ -22,6 +22,7 @@ const variantClasses: Record<string, string> = {
   filled: 'rounded-[32px] bg-gradient-to-b from-[#673236] to-[#4D1216] !pb-0 px-8 pt-8 text-white',
 }
 const paddingClasses: Record<string, string> = {
+  xs: 'p-5 lg:p-7',
   sm: 'p-5 lg:p-10',
   lg: 'p-[50px]',
 }

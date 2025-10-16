@@ -17,18 +17,29 @@ const variantClasses: Record<string, string> = {
 
 <template>
   <CardBase  variant="rounded" :extra-class="variantClasses[variant]">
+    <div class="flex flex-col items-start justify-between h-full">
     <TypingText40 extra_class="mb-[30px] uppercase" :text="variant"/>
 
-    <div class="mb-[60px]" v-html="tariff.description">
-
+    <div class="mb-[60px] html-content" v-html="tariff.description"></div>
+    <div class="w-full">
+      <TypingText40 extra_class="mb-10" :text="tariff.price_text"/>
+      <a :href="tariff.btn_url" target="_blank" >  <UIButton class="!w-full">Приобрести доступ</UIButton></a>
     </div>
-
-    <TypingText40 extra_class="text-center mb-[60px]" :text="tariff.price_text"/>
-    <a :href="tariff.btn_url" target="_blank">  <UIButton class="!w-full">Приобрести доступ</UIButton></a>
+    </div>
 
   </CardBase>
 </template>
 
-<style scoped>
-
+<style lang="sass">
+.html-content
+  ul
+    list-style: disc
+    padding-left: 20px
+    margin-bottom: 20px
+    &
+      li
+        font-size: 16px
+        &::marker
+          color: white
+          font-size: 18px
 </style>

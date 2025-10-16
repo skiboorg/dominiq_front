@@ -12,7 +12,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <p class="text-[16px] leading-[150%] font-medium tracking-[-0.04rem]"
+  <p class="text-[16px] leading-[150%] tracking-[-0.04rem]"
       :class="props.extra_class"
       v-html="props.text"></p>
 </template>

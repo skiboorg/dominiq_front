@@ -5,7 +5,9 @@
 <BlockSection  >
   <div class="block lg:grid  grid-cols-12">
     <div class="col-start-4 col-end-13">
-      <p class="text-[30px] lg:text-[48px] leading-[105%] mb-[30px] lg:mb-[60px]">Мы представляем интересы бизнеса в 10 направлениях на Земле, вот такие мы молодцы!</p>
+      <p class="text-[30px] lg:text-[48px] leading-[105%] mb-[30px] lg:mb-[60px]">
+        Мы представляем и соединяем женщин бизнеса мира — создавая глобальное сообщество вдохновения, влияния и взаимной силы.
+      </p>
     </div>
   </div>
   <BlockSmallHeader>

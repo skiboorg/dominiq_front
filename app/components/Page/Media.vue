@@ -6,7 +6,7 @@ const carouselConfig = {
   wrapAround: true,
   //autoplay: 3000,
   pauseAutoplayOnHover: true,
-  gap:10,
+  gap:16,
   //slideEffect:'fade'
   breakpoints: {
     // 300px and up

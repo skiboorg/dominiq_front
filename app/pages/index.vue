@@ -2,7 +2,10 @@
 definePageMeta({
   layout: 'hero'
 })
-
+useSeoMeta({
+  title: 'DOMINIQUE | Международное сообщество женщин-лидеров',
+  ogTitle: 'DOMINIQUE | Международное сообщество женщин-лидеров',
+})
 
 </script>
 <template>

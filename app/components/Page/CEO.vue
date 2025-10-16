@@ -29,7 +29,7 @@ const items = [
 
   <TypingText40 text='
 
-  <div class="flex gap-5">
+  <div class="flex gap-2 lg:gap-5">
      <div class="">
    <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M18.1962 28L9.20682 14L18.1962 0H9.06183L0 14L9.06183 28H18.1962ZM34 28L25.0107 14L34 0H24.8657L15.8038 14L24.8657 28H34Z" fill="#B71D31"/>
